@@ -2,6 +2,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
 }
+h1,
+p,
+h2,
+h3 {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -70,4 +80,56 @@ ul {
     gap: 12px;
     font-size: 14px;
   }
+}
+
+.main-bg {
+  margin: 0px;
+  background-color: #000000;
+  color: white;
+  padding-bottom: 80px;
+  box-shadow: inset 0px -180px #ffffff;
+}
+.main img {
+  height: 100%;
+  object-fit: cover;
+}
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 20px;
+}
+.main-intro {
+  align-self: end;
+  padding-bottom: 260px;
+}
+.main-intro h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+.main-intro h1 span {
+  color: #ffbb00;
+}
+.main-intro p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.main a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /*x, y, bluer, font-size */
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+.main a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
